@@ -1,0 +1,64 @@
+body{
+    
+    background: rgba(14, 187, 164, 0.527);
+}
+.mar{
+    margin-top:30px;
+    position:absolute;
+    margin-left:50px;
+}
+
+nav ul{
+    list-style: none;
+    float:right;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 40px;
+
+}
+nav ul li a{
+    font-family:poppins extrabold;
+    color:rgb(134, 255, 249);
+    font-size:20px;
+    font-variant-caps: all-small-caps;
+}
+nav ul li a:hover{
+    color:rgb(10, 163, 156);
+}
+.light{
+    opacity:0.5;
+}
+h2{
+    font-size:2em;
+    font-family: poppins extrabold;
+    font-style: oblique;
+    font-variant: small-caps;
+
+}
+hr{
+    color:#fff;
+    background: #fff;
+}
+.button{
+    position: absolute;
+    float:right;
+}
+.sidepanel{
+    float:right;
+}
+.navbar-brand{
+    font-family: Poppins;
+    font-weight: 900;
+}
+.thin{
+    font-family: montserrat;
+    font-weight: 400;
+}
+.bold{
+    font-family: montserrat;
+    font-weight: 900;
+}
+.white{
+    color:#fff;
+}

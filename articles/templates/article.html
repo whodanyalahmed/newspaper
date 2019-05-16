@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Article app
+{% endblock title %}
+
+{% block body %}
+<h1 class="bold">Articles<span class="thin"> Django Project</span></h1><br>
+
+<div align="right" ><a href="{% url 'article_create' %}" class="create">+ Create Post</a></div>
+{% for article in object_list  %}
+<div class="card">
+    <div class="card-header">
+        <span class="font-weight-bold"><a href="{{article.pk}}">{{ article.title }}</a></span> &middot;
+        <span class="text-muted">by {{ article.author }} | {{ article.date }}</span>
+    </div>
+    <div class="card-body">
+        {{ article.body }}
+    </div>
+    <div class="card-footer text-center text-muted">
+        <a href="{% url 'article_update' article.pk %}">Edit</a> | <a href="{% url 'article_delete' article.pk %}" >Delete</a>
+    </div>
+</div>
+<br />
+{% endfor %}
+{% endblock body %}
